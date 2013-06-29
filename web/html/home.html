@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SmartFarm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css.css"/>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+	<div class="header">
+		<a href=""><img class="lefted" src="../img/smartfarm.png" width="300"></img></a>
+		<div class="righted logoutbar">
+			<span>Mr. Farmer</span>
+			<div class="btn-group">
+				<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+					<i class="icon-chevron-down"></i>
+				</button>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="home.html">My Farms</a>
+					</li>
+					<li>
+						<a href="">Profile</a>
+					</li>
+					<li>
+						<a href="login.html">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			$('.dropdown-toggle').dropdown();
+		});
+	</script>
+
+	<div class="content">
+		<ul>
+			<li>
+				<div class="farmbox">
+					<div class="lefted">
+						<h3>Farm 1</h3>
+						<p>UP Diliman, Quezon City</p>
+					</div>
+					<div class="righted">
+						<img class="staticon" src="../img/box-green.png" width="100" />
+						<img class="staticon" src="../img/box-green.png" width="100" />
+						<img class="staticon" src="../img/box-green.png" width="100" />
+						<img class="staticon" src="../img/box-green.png" width="100" />
+					</div>
+				</div>
+			</li>	
+			<li>
+				<div class="farmbox">
+					<div class="lefted">
+						<h3>Farm 2</h3>
+						<p>UP Diliman, Quezon City</p>
+					</div>
+					<div class="righted">
+						<img class="staticon" src="../img/box-green.png" width="100" />
+						<img class="staticon" src="../img/box-green.png" width="100" />
+						<img class="staticon" src="../img/box-green.png" width="100" />
+						<img class="staticon" src="../img/box-green.png" width="100" />
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="footer">
+		<a href="about.html">About</a>
+	</div>
+
+</body>
+</html>

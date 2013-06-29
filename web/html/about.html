@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SmartFarm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css.css"/>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+	<div class="header">
+		<a href=""><img class="lefted" src="../img/smartfarm.png" width="300"></img></a>
+		<div class="righted logoutbar">
+			<span>Mr. Farmer</span>
+			<div class="btn-group">
+				<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+					<i class="icon-chevron-down"></i>
+				</button>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="home.html">My Farms</a>
+					</li>
+					<li>
+						<a href="">Profile</a>
+					</li>
+					<li>
+						<a href="login.html">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			$('.dropdown-toggle').dropdown();
+		});
+	</script>
+
+	<div class="content">
+		<div class="farmbox">
+			<h3>The Watchers</h3>
+			<p>We are a group of engineers from the University of the Philippines interested in developing better solutions for chicken farm management: increasing efficiency and productivity, making more profit, and ultimately saving chickens' lives.</p>
+		</div>
+
+		<div class="farmbox">
+			<h3>The Project</h3>
+			<p>We are developing Smart Farm with the goal of making chicken farm management much easier such that it can be done with without even leaving your seat. We wanted to help you keep in touch with your farm - whenever, wherever. We also want to let you know about the problems your farm is experiencing or is about to experience and let you act faster.</p>
+		</div>
+
+		<div class="farmbox">
+			<h3>Pricing</h3>
+			<p>The project is still under development and we haven't discussed how much our services would cost. It will most likely be a one time payment for the equipment and for our services, it will be on a subscription basis, with prices based on the level of usage.</p>
+		</div>
+	</div>
+
+</body>
+</html>
