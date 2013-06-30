@@ -1,0 +1,41 @@
+!!! 5
+html(lang="en")
+  head
+    title SmartFarm
+    link(href="../bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
+    link(href="style.css", rel="stylesheet")
+    script(src="http://code.jquery.com/jquery.js")
+    script(src="../bootstrap/js/bootstrap.min.js")
+    
+  body
+    div.header
+      a(href="")
+        img(src="../img/smartfarm.png", width="300")
+      div.logoutbar.righted
+        span Mr. Farmer
+        div.btn-group
+          button.btn.btn-mini.dropdown-toggle(data-toggle="dropdown")
+            i.icon-chevron-down
+          ul.dropdown-menu
+            li
+              a(href="home.html") My Farms
+            li
+              a(href="") Profile
+            li
+               a(href="login.html") Logout
+               
+    script(type="text/javascript")
+      $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+      });
+      
+    div.content
+      div.farmbox
+        h3 The Watchers
+        p   We are a group of engineers from the University of the Philippines interested in developing better solutions for chicken farm management: increasing efficiency and productivity, making more profit, and ultimately saving chickens' lives.
+      div.farmbox
+        h3 The Project
+        p We are developing <b> Smart Farm </b> with the goal of making chicken farm management much easier such that it can be done with without even leaving your seat. We wanted to help you keep in touch with your farm - whenever, wherever. We also want to let you know about the problems your farm is experiencing or is about to experience and let you act faster.
+      div.farmbox
+        h3 Pricing
+        p The project is still under development and we haven't discussed how much our services would cost. It will most likely be a one time payment for the equipment and for our services, it will be on a subscription basis, with prices based on the level of usage.

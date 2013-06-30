@@ -1,0 +1,60 @@
+!!! 5
+html(lang="en")
+  head
+    title SmartFarm
+    link(href="../bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
+    link(href="style.css", rel="stylesheet")
+    script(src="http://code.jquery.com/jquery.js")
+    script(src="../bootstrap/js/bootstrap.min.js")
+    
+  body
+    div.header
+      a(href="")
+        img(src="../img/smartfarm.png", width="300")
+      div.logoutbar.righted
+        span Mr. Farmer
+        div.btn-group
+          button.btn.btn-mini.dropdown-toggle(data-toggle="dropdown")
+            i.icon-chevron-down
+          ul.dropdown-menu
+            li
+              a(href="home.html") My Farms
+            li
+              a(href="") Profile
+            li
+               a(href="login.html") Logout
+               
+    script(type="text/javascript")
+      $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+      });
+      
+    div.content
+      ul
+        li
+          a(href="farm.html")
+            div.farmbox
+              div.lefted
+                h3 Farm 1
+                p UP Diliman, Quezon City
+              div.righted
+                img.staticon(src="../img/box-green.png", width="100")
+                img.staticon(src="../img/box-green.png", width="100")
+                img.staticon(src="../img/box-green.png", width="100")
+                img.staticon(src="../img/box-green.png", width="100")
+        li
+          div.farmbox
+            div.lefted
+              h3 Farm 2
+              p UP Diliman, Quezon City
+            div.righted
+              img.staticon(src="../img/box-green.png", width="100")
+              img.staticon(src="../img/box-green.png", width="100")
+              img.staticon(src="../img/box-green.png", width="100")
+              img.staticon(src="../img/box-green.png", width="100")
+        li
+          div.farmbox
+            a(href="newfarm.html") New Farm  
+    
+    div.footer
+      a(href="about.html") About

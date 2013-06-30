@@ -1,0 +1,32 @@
+!!! 5
+// Hello world!
+html(lang="en")
+  head
+    title SmartFarm
+    link(href="../bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
+    link(href="style.css", rel="stylesheet")
+    script(src="http://code.jquery.com/jquery.js")
+    script(src="../bootstrap/js/bootstrap.min.js")
+    
+  body
+    div.header 
+      //logo here
+      a(href="")
+        img(src="../img/smartfarm.png", width="300")
+        
+    div.content.centerbox
+      div.loginbox
+        form.form-horizontal
+          div.control-group
+            input#name(type="text", placeholder="Username")
+          div.control-group
+            input#password(type="password", placeholder="Password")
+        a(href="home.html")
+          button.btn Login
+      br
+      div
+        h4.newuser.lefted New user?
+        button.btn Sign up
+        
+    div.footer
+      a(href="about.html") About

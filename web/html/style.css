@@ -1,0 +1,17 @@
+body{padding:10px}
+li{list-style:none}
+ul{margin:0}
+.header{clear:both;margin:10px}
+.footer{clear:both;margin-top:70px;padding:10px 20px}
+.content{clear:both;margin:0 auto;width:100%}
+.centerbox{width:200px;margin:auto;margin-top:20px;}
+.centerbox input,.centerbox button{width:200px}
+padding-right 0{margin-right:0}
+.loginbox{padding-bottom:10px}
+.lefted{float:left}
+.righted{float:right}
+.logoutbar{margin-top:30px;margin-right:50px;}
+.logoutbar .dropdown-menu{margin-left:-100px}
+.staticon{margin:10px}
+.newuser{margin-right:30px}
+.farmbox{clear:both;width:90%;margin:auto;padding-top:30px}
