@@ -1,0 +1,38 @@
+title = "Smart Farm"
+tabs = ["The Project", "The Pricing", "The Watchers"]
+
+!!! 5
+html(lang="en")
+  head
+    title Smart Farm
+    //twitter bootstrap css
+    link(href="../bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
+    // my css
+    link(href="style2point0.css", rel="stylesheet")
+    // jquery
+    script(src="http://code.jquery.com/jquery.js")
+    //twitter bootstrap js
+    script(src="../bootstrap/js/bootstrap.min.js")
+    
+  body
+    .header.two-col
+      img.col-1(src="../img/smartfarm.png", width="300")
+      .loginbox.col-2
+        form
+          input(type="text", placeholder="Username")
+          input(type="password", placeholder="Password")
+          button.btn.btn-green Login
+          
+    .content
+      div.slideshow
+        .bigcover
+          img(src="../img/cover.png")
+          button.btn.btn-blue.btn-large Purchase Smart Farm
+      div.lowertabs
+        each tab in tabs
+          div 
+            a(href="")
+              h4 #{tab}
+    .footer
+      //a(href="") About
+      p &copy 2013 The Watchers

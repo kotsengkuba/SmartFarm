@@ -1,9 +1,9 @@
 body{padding:10px}
 li{list-style:none}
 ul{margin:0}
-.header{clear:both;margin:10px}
+.header{clear:both}
 .footer{clear:both;margin-top:70px;padding:10px 20px}
-.content{clear:both;margin:0 auto;width:100%}
+.content{clear:both;margin:0 auto;padding:2% 10%}
 .centerbox{width:200px;margin:auto;margin-top:20px;}
 .centerbox input,.centerbox button{width:200px}
 padding-right 0{margin-right:0}
@@ -15,3 +15,6 @@ padding-right 0{margin-right:0}
 .staticon{margin:10px}
 .newuser{margin-right:30px}
 .farmbox{clear:both;width:90%;margin:auto;padding-top:30px}
+.grid-4{clear:both;margin:auto;}
+.grid-4 div{float:left;margin:1%;height:300px;border:solid}
+.bigbox{width:500px;height:500px;margin:10px}
