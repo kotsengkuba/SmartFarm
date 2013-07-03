@@ -7,10 +7,10 @@ a:hover{text-decoration:none;cursor:pointer}
 .footer p{text-align:center}
 .content{padding:0 20px}
 .loginbox{margin-top:30px}
-.slideshow{padding-top:20px;margin:auto;overflow:auto}
-.bigcover button{position:absolute;bottom:5%;right:20%}
-.lowertabs{clear:both;margin:10px 0;}
-.lowertabs div{float:left;padding:10px 20px;width:30%;background-color:#7bb739;}
+.slideshow{padding-top:20px;margin:auto;overflow:auto;position:relative;}
+.slideshow button{position:absolute;bottom:10%;right:10%}
+.lowertabs{clear:both;margin:10px 0;position:relative;}
+.lowertabs div{float:left;padding:1% 0;width:33.33%;background-color:#7bb739;}
 .lowertabs div h4{text-align:center}
 .two-col{overflow:auto;}
 .two-col .col-1{float:left}
