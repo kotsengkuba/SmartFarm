@@ -1,5 +1,6 @@
 title = "Smart Farm"
 tabs = ["The Project", "The Watchers", "Pricing"]
+covertexts = ["We are developing Smart Farm with the goal of making chicken farm management much easier such that it can be done with without even leaving your seat. We wanted to help you keep in touch with your farm - whenever, wherever. We also want to let you know about the problems your farm is experiencing or is about to experience and let you act faster.", "text2", "text3"]
 
 !!! 5
 html(lang="en")
@@ -7,12 +8,19 @@ html(lang="en")
     title Smart Farm
     //twitter bootstrap css
     link(href="../bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
-    // my css
-    link(href="style2point0.css", rel="stylesheet")
+    
     // jquery
     script(src="http://code.jquery.com/jquery.js")
     //twitter bootstrap js
     script(src="../bootstrap/js/bootstrap.min.js")
+    
+    //nivo-slider css
+    link(href="../nivo-slider/nivo-slider.css", rel="stylesheet", media="screen")
+    //nivo-slider js
+    script(src="../nivo-slider/jquery.nivo.slider.pack.js")
+    
+    // my css
+    link(href="style2point0.css", rel="stylesheet")
     
   body
     .header.two-col
@@ -25,16 +33,63 @@ html(lang="en")
           
     .content
       div.slideshow
-        .bigcover
-          img(src="../img/cover1.png")
-        form(action="purchase.html")
-          button.btn.btn-blue.btn-large Purchase Smart Farm
+        .bigcover        
+          div.slider-wrapper
+            div.nivoSlider#slider
+              img(src="../img/blue-radial.jpg", title="#caption1")
+              img(src="../img/yellow-radial.jpg", title="#caption2")
+              img(src="../img/bluegreen-radial.jpg", title="#caption3")
 
-      div.lowertabs
+                    
+        #caption1.nivo-html-caption
+          p We are developing Smart Farm with the goal of making chicken farm management much easier such that it can be done with without even leaving your seat. We wanted to help you keep in touch with your farm - whenever, wherever. We also want to let you know about the problems your farm is experiencing or is about to experience and let you act faster.
+          form(action="purchase.html")
+            button.btn.btn-blue.btn-large Purchase Smart Farm 
+          
+        #caption2.nivo-html-caption
+          p We are a group of engineers from the University of the Philippines interested in developing better solutions for chicken farm management: increasing efficiency and productivity, making more profit, and ultimately saving chickens' lives.
+          form(action="purchase.html")
+            button.btn.btn-blue.btn-large Purchase Smart Farm
+
+          
+        #caption3.nivo-html-caption
+          p The project is still under development and we haven't discussed how much our services would cost. It will most likely be a one time payment for the equipment and for our services, it will be on a subscription basis, with prices based on the level of usage.
+          form(action="purchase.html")
+            button.btn.btn-blue.btn-large Purchase Smart Farm
+
+      //div.lowertabs
         each tab in tabs
           div 
             a(href="")
               h4 #{tab}
+      
+      
+      script
+        $(window).load(function() {
+          $('#slider').nivoSlider({
+              effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+              slices: 15, // For slice animations
+              boxCols: 8, // For box animations
+              boxRows: 4, // For box animations
+              animSpeed: 500, // Slide transition speed
+              pauseTime: 7000, // How long each slide will show
+              startSlide: 0, // Set starting Slide (0 index)
+              directionNav: true, // Next & Prev navigation
+              controlNav: true, // 1,2,3... navigation
+              controlNavThumbs: false, // Use thumbnails for Control Nav
+              pauseOnHover: true, // Stop animation while hovering
+              manualAdvance: false, // Force manual transitions
+              prevText: '', // Prev directionNav text
+              nextText: '', // Next directionNav text
+              randomStart: false, // Start on a random slide
+              beforeChange: function(){}, // Triggers before a slide transition
+              afterChange: function(){}, // Triggers after a slide transition
+              slideshowEnd: function(){}, // Triggers after all slides have been shown
+              lastSlide: function(){}, // Triggers when last slide is shown
+              afterLoad: function(){} // Triggers when slider has loaded
+          });
+        });
+        
     .footer
       //a(href="") About
       p &copy 2013 The Watchers

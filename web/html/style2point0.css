@@ -14,10 +14,16 @@ ul{list-style:none}
 .quicklinks{position:relative;width:100%;left:10px;top:55px;}
 .quicklinks a{float:left;color:#bbb;margin:0 10px}
 .quicklinks a:hover{color:#fff}
-.slideshow{padding-top:20px;margin:auto;position:relative;}
+.slideshow{padding-top:10px;margin:auto;overflow:auto;position:relative;width:100%;}
 .slideshow button{position:absolute;bottom:10%;right:10%}
+.nivo-caption{background:none;color:#333;padding:8px;position:absolute;right:38px;top:40px;z-index:8;}
+.nivo-caption p{width:60%;margin:20px;font-size:300%;line-height:95%;letter-spacing:80%}
+.nivo-caption button{clear:both}
+.nivo-html-caption{display:none}
 .bigcover{position:relative;}
+.bigcover img{width:90%}
 .bigcover span{position:absolute;float:left;top:20%;left:10%;font-size:10em}
+.bigcover button{position:absolute}
 .lowertabs{clear:both;margin:10px 0;position:relative;}
 .lowertabs div{float:left;padding:1% 0;width:33.33%;background-color:#7bb739;}
 .lowertabs div h4{text-align:center}
