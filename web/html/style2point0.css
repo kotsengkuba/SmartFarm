@@ -2,19 +2,30 @@ body{background-color:#eee}
 input[type="text"],input[type="password"]{margin:10px 5px}
 a{color:#222;text-decoration:none}
 a:hover{text-decoration:none;cursor:pointer}
-.header{background-color:#222;padding:10px 20px 0 20px}
+ul{list-style:none}
+.header{background-color:#222;padding:10px 20px 0 20px;height:100px}
 .footer{clear:both;margin-top:100px;padding:0 20px;color:#999;}
 .footer p{text-align:center}
 .content{padding:0 20px}
 .loginbox{margin-top:30px}
+.menu{color:#999;margin-top:30px;}
+.menu span{font-size:1.5em}
+.menu ul{left:-120px}
 .slideshow{padding-top:20px;margin:auto;overflow:auto;position:relative;}
 .slideshow button{position:absolute;bottom:10%;right:10%}
+.bigcover{position:relative;}
+.bigcover span{position:absolute;float:left;top:20%;left:10%;font-size:10em}
 .lowertabs{clear:both;margin:10px 0;position:relative;}
 .lowertabs div{float:left;padding:1% 0;width:33.33%;background-color:#7bb739;}
 .lowertabs div h4{text-align:center}
-.two-col{overflow:auto;}
 .two-col .col-1{float:left}
 .two-col .col-2{float:right}
+.stats{width:90%;position:relative;margin:auto;}
+.stats div{float:left}
+.farmbox{overflow:auto;clear:both;margin:auto;margin-top:10px;width:90%}
+.chartbox{position:relative;height:300px;border:1px solid;width:80%;display:none;margin:auto}
+.statbox{position:relative;width:24%;min-width:150px;height:200px;border:1px solid}
+.statbox:hover{background-color:#dfd}
 .btn-blue{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25);background-color:#329a9f;*background-color:#329a9f;background-image:-moz-linear-gradient(top,#13cbd4,#329a9f);background-image:-webkit-gradient(linear,0 0,0 100%,from(#13cbd4),to(#329a9f));background-image:-webkit-linear-gradient(top,#13cbd4,#329a9f);background-image:-o-linear-gradient(top,#13cbd4,#329a9f);background-image:linear-gradient(to bottom,#13cbd4,#329a9f);background-repeat:repeat-x;border-color:#329a9f;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25)}
 .btn-blue:hover,.btn-blue:active,.btn-blue.active,.btn-blue.disabled,.btn-blue[disabled]{color:#fff;background-color:#329a9f;*background-color:#003bb3}
 .btn-green{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25);background-color:#7bb739;background-image:-moz-linear-gradient(top,#a7fa4e,#7bb739);background-image:-webkit-gradient(linear,0 0,0 100%,from(#a7fa4e),to(#7bb739));background-image:-webkit-linear-gradient(top,#a7fa4e,#7bb739);background-image:-o-linear-gradient(top,#a7fa4e,#7bb739);background-image:linear-gradient(to bottom,#a7fa4e,#7bb739);background-repeat:repeat-x;border-color:#7bb739;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25)}

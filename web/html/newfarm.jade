@@ -1,17 +1,20 @@
 !!! 5
 html(lang="en")
   head
-    title SmartFarm
+    title Smart Farm
+    //twitter bootstrap css
     link(href="../bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
-    link(href="style.css", rel="stylesheet")
+    // my css
+    link(href="style2point0.css", rel="stylesheet")
+    // jquery
     script(src="http://code.jquery.com/jquery.js")
+    //twitter bootstrap js
     script(src="../bootstrap/js/bootstrap.min.js")
     
   body
-    div.header
-      a(href="")
-        img(src="../img/smartfarm.png", width="300")
-      div.logoutbar.righted
+    .header.two-col
+      img.col-1(src="../img/smartfarm.png", width="300")
+      div.menu.col-2
         span Mr. Farmer
         div.btn-group
           button.btn.btn-mini.dropdown-toggle(data-toggle="dropdown")
@@ -20,19 +23,21 @@ html(lang="en")
             li
               a(href="home.html") My Farms
             li
-              a(href="") Profile
+              a(href="profile.html") Profile
             li
-               a(href="login.html") Logout
+              a(href="billing.html") Billing
+            li
+               a(href="loginv2.html") Logout
                
     script(type="text/javascript")
       $(document).ready(function () {
         $('.dropdown-toggle').dropdown();
       });
       
-    div.content
+    .content
       div.farmbox
         h2 New Farm
-        form
+        form(action="home.html")
           label System Serial Number
           input(type="text")
           
@@ -45,5 +50,6 @@ html(lang="en")
           br
           input.btn(type="submit")
   
-    div.footer
-      a(href="about.html") About
+    .footer
+      //a(href="") About
+      p &copy 2013 The Watchers

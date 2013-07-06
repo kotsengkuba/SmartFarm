@@ -13,9 +13,13 @@ a:hover
   text-decoration:none
   cursor:pointer
   
+ul
+  list-style none
+  
 .header
   background-color #222222
   padding 10px 20px 0 20px
+  height 100px
 
 .footer
   clear both
@@ -32,6 +36,14 @@ a:hover
 .loginbox
   margin-top 30px
   
+.menu
+  color #999999
+  margin-top 30px
+  span
+    font-size 1.5em
+  ul
+    left -120px
+  
 .slideshow
   padding-top 20px
   margin auto
@@ -46,8 +58,15 @@ a:hover
 .bigcover
   //background-color #555555
   //overflow auto
+  position relative
   img
     //
+  span
+    position absolute
+    float left
+    top 20%
+    left 10%
+    font-size 10em
   
 .lowertabs
   //background-color #666666
@@ -63,12 +82,44 @@ a:hover
       text-align center
     
 .two-col
-  overflow auto
+  //overflow auto
   .col-1
     float left
   .col-2
     float right
     
+.stats
+  width 90%
+  position relative
+  margin auto
+  div
+    float left
+    
+.farmbox
+  overflow auto
+  clear both
+  margin auto
+  margin-top 10px
+  width 90%
+    
+.chartbox
+  position relative
+  height 300px
+  border 1px solid
+  width 80%
+  display none
+  margin auto
+  
+.statbox
+  position relative
+  width 24%
+  min-width 150px
+  height 200px
+  border 1px solid
+  
+.statbox:hover
+  background-color #DDFFDD
+
 .btn-blue
 	color: #FFFFFF
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)

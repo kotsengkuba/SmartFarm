@@ -1,17 +1,20 @@
 !!! 5
 html(lang="en")
   head
-    title SmartFarm
+    title Smart Farm
+    //twitter bootstrap css
     link(href="../bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
-    link(href="style.css", rel="stylesheet")
+    // my css
+    link(href="style2point0.css", rel="stylesheet")
+    // jquery
     script(src="http://code.jquery.com/jquery.js")
+    //twitter bootstrap js
     script(src="../bootstrap/js/bootstrap.min.js")
     
   body
-    div.header
-      a(href="")
-        img(src="../img/smartfarm.png", width="300")
-      div.logoutbar.righted
+    .header.two-col
+      img.col-1(src="../img/smartfarm.png", width="300")
+      div.menu.col-2
         span Mr. Farmer
         div.btn-group
           button.btn.btn-mini.dropdown-toggle(data-toggle="dropdown")
@@ -20,27 +23,47 @@ html(lang="en")
             li
               a(href="home.html") My Farms
             li
-              a(href="") Profile
+              a(href="profile.html") Profile
             li
-               a(href="login.html") Logout
+              a(href="billing.html") Billing
+            li
+               a(href="loginv2.html") Logout
                
     script(type="text/javascript")
       $(document).ready(function () {
         $('.dropdown-toggle').dropdown();
       });
       
-    div.content
+    .content
       div
         h2 Farm 1
-      div.grid-4
-        div
+      div.chartbox
+        span Chart  Here
+      div.stats
+        .statbox
           span Temperature
-        div
+          h3 33&deg
+          span Other Details Here
+        .statbox
           span Humidity
-        div
+          h3 56%
+          span Other Details Here
+        .statbox
           span Weather
-        div
+          br
+          img(src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png")
+          br
+          span Other Details Here
+        .statbox
           span Ammonia Level
-  
-    div.footer
-      a(href="about.html") About
+          h3 88
+          span Other Details Here
+    
+    script(type="text/javascript")
+      $(".statbox").click(function(){
+        $(".chartbox").toggle();
+      });
+    
+    .footer
+      //a(href="") About
+      p &copy 2013 The Watchers

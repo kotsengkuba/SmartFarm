@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SmartFarm</title>
+    <title>Smart Farm</title>
+    <!--twitter bootstrap css-->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="style.css" rel="stylesheet">
+    <!-- my css-->
+    <link href="style2point0.css" rel="stylesheet">
+    <!-- jquery-->
     <script src="http://code.jquery.com/jquery.js"></script>
+    <!--twitter bootstrap js-->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="header"><a href=""><img src="../img/smartfarm.png" width="300"></a>
-      <div class="logoutbar righted"><span>Mr. Farmer</span>
+    <div class="header two-col"><img src="../img/smartfarm.png" width="300" class="col-1">
+      <div class="menu col-2"><span>Mr. Farmer</span>
         <div class="btn-group">
           <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><i class="icon-chevron-down"></i></button>
           <ul class="dropdown-menu">
             <li><a href="home.html">My Farms</a></li>
-            <li><a href="">Profile</a></li>
-            <li><a href="login.html">Logout</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="billing.html">Billing</a></li>
+            <li><a href="loginv2.html">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -27,29 +32,32 @@
       
     </script>
     <div class="content">
+      <h2>Your Farms</h2>
+      <div class="farmbox two-col">
+        <div class="col-1"><a href="farm.html">
+            <h3>Farm1</h3></a>
+          <p>UP</p>
+        </div>
+        <div class="col-2"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"></div>
+      </div>
+      <div class="farmbox two-col">
+        <div class="col-1"><a href="farm.html">
+            <h3>farm2</h3></a>
+          <p>bagiuo</p>
+        </div>
+        <div class="col-2"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"></div>
+      </div>
+      <div class="farmbox"><a href="newfarm.html">New Farm</a></div>
+    </div>
+    <div class="sponsored"><span>Sponsors</span>
       <ul>
-        <li><a href="farm.html">
-            <div class="farmbox">
-              <div class="lefted">
-                <h3>Farm 1</h3>
-                <p>UP Diliman, Quezon City</p>
-              </div>
-              <div class="righted"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"></div>
-            </div></a></li>
-        <li>
-          <div class="farmbox">
-            <div class="lefted">
-              <h3>Farm 2</h3>
-              <p>UP Diliman, Quezon City</p>
-            </div>
-            <div class="righted"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"><img src="../img/box-green.png" width="100" class="staticon"></div>
-          </div>
-        </li>
-        <li>
-          <div class="farmbox"><a href="newfarm.html">New Farm  </a></div>
-        </li>
+        <li>sp1</li>
+        <li>sp2</li>
       </ul>
     </div>
-    <div class="footer"><a href="about.html">About</a></div>
+    <div class="footer">
+      <!--a(href="") About-->
+      <p>&copy 2013 The Watchers</p>
+    </div>
   </body>
 </html>

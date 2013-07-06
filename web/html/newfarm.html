@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SmartFarm</title>
+    <title>Smart Farm</title>
+    <!--twitter bootstrap css-->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="style.css" rel="stylesheet">
+    <!-- my css-->
+    <link href="style2point0.css" rel="stylesheet">
+    <!-- jquery-->
     <script src="http://code.jquery.com/jquery.js"></script>
+    <!--twitter bootstrap js-->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="header"><a href=""><img src="../img/smartfarm.png" width="300"></a>
-      <div class="logoutbar righted"><span>Mr. Farmer</span>
+    <div class="header two-col"><img src="../img/smartfarm.png" width="300" class="col-1">
+      <div class="menu col-2"><span>Mr. Farmer</span>
         <div class="btn-group">
           <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><i class="icon-chevron-down"></i></button>
           <ul class="dropdown-menu">
             <li><a href="home.html">My Farms</a></li>
-            <li><a href="">Profile</a></li>
-            <li><a href="login.html">Logout</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="billing.html">Billing</a></li>
+            <li><a href="loginv2.html">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -29,7 +34,7 @@
     <div class="content">
       <div class="farmbox">
         <h2>New Farm</h2>
-        <form>
+        <form action="home.html">
           <label>System Serial Number</label>
           <input type="text">
           <label>Farm Name</label>
@@ -40,6 +45,9 @@
         </form>
       </div>
     </div>
-    <div class="footer"><a href="about.html">About</a></div>
+    <div class="footer">
+      <!--a(href="") About-->
+      <p>&copy 2013 The Watchers</p>
+    </div>
   </body>
 </html>
