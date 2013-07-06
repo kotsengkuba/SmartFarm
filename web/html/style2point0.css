@@ -10,15 +10,18 @@ ul{list-style:none}
 .loginbox{margin-top:30px}
 .menu{color:#999;margin-top:30px;}
 .menu span{font-size:1.5em}
-.menu ul{left:-120px}
-.quicklinks{position:relative;width:100%;left:10px;top:55px;}
-.quicklinks a{float:left;color:#bbb;margin:0 10px}
+.menu ul{left:-20px}
+.menu h3:hover{color:#fff;cursor:pointer}
+.quicklinks{position:relative;width:100%;left:10px;top:55px;font-size:1.2em;}
+.quicklinks a{float:left;color:#bbb;margin:0 20px}
 .quicklinks a:hover{color:#fff}
-.slideshow{padding-top:10px;margin:auto;overflow:auto;position:relative;width:100%;}
+.slideshow{padding-top:10px;margin:auto;overflow:auto;position:relative;width:100%;max-width:1024px;}
 .slideshow button{position:absolute;bottom:10%;right:10%}
 .nivo-caption{background:none;color:#333;padding:8px;position:absolute;right:38px;top:40px;z-index:8;}
-.nivo-caption p{width:60%;margin:20px;font-size:300%;line-height:95%;letter-spacing:80%}
+.nivo-caption p,.nivo-caption h3{width:60%;margin:20px;font-size:300%;line-height:95%;letter-spacing:80%}
 .nivo-caption button{clear:both}
+.nivo-caption a{font-size:200%;color:#00f;margin-left:20px}
+.nivo-caption a:hover{opacity:.5}
 .nivo-html-caption{display:none}
 .bigcover{position:relative;}
 .bigcover img{width:90%}
@@ -29,15 +32,20 @@ ul{list-style:none}
 .lowertabs div h4{text-align:center}
 .two-col .col-1{float:left}
 .two-col .col-2{float:right}
-.stats{width:90%;position:relative;margin:auto;}
+.stats{width:90%;position:relative;margin:auto;overflow:auto;}
 .stats div{float:left}
-.farmbox{overflow:auto;clear:both;margin:auto;margin-top:10px;width:90%}
-.staticon{float:left;width:100px;height:100px;border:1px solid;}
-.staticon span,.staticon img{margin-left:30px}
-#container{position:relative;width:auto;height:300px}
-.chartbox{position:relative;height:300px;border:1px solid;width:80%;display:none;margin:auto}
-.statbox{position:relative;width:24%;min-width:150px;height:200px;border:1px solid}
-.statbox:hover{background-color:#dfd}
+.farmbox{overflow:auto;clear:both;margin:auto;margin-top:10px;width:90%;padding:10px}
+.farmbox:hover{background-color:#fff;opacity:.9}
+.staticon{float:left;width:100px;height:80px;background-color:#333;border-top:10px solid #89f514;margin-left:10px;}
+.staticon span{clear:both;position:relative;margin-left:10px;font-size:2.8em;top:20px;color:#ccc}
+.staticon img{margin-left:10px;width:80px}
+#container{position:relative;width:90%;height:300px;margin:auto}
+.chartbox{position:relative;width:90%;display:none;margin:auto;margin-bottom:10px}
+.statbox{position:relative;width:24%;min-width:150px;height:200px;background-color:#333;margin-left:10px;color:#ccc;border-radius:5px;}
+.statbox h3{position:relative;font-size:4em;margin-left:30%;margin-bottom:20%;margin-top:10%;color:#89f514}
+.statbox span{margin-left:5%}
+.statbox img{position:relative;width:120px;height:120px;margin-left:25%}
+.statbox:hover{opacity:.9}
 .btn-blue{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25);background-color:#329a9f;*background-color:#329a9f;background-image:-moz-linear-gradient(top,#13cbd4,#329a9f);background-image:-webkit-gradient(linear,0 0,0 100%,from(#13cbd4),to(#329a9f));background-image:-webkit-linear-gradient(top,#13cbd4,#329a9f);background-image:-o-linear-gradient(top,#13cbd4,#329a9f);background-image:linear-gradient(to bottom,#13cbd4,#329a9f);background-repeat:repeat-x;border-color:#329a9f;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25)}
 .btn-blue:hover,.btn-blue:active,.btn-blue.active,.btn-blue.disabled,.btn-blue[disabled]{color:#fff;background-color:#329a9f;*background-color:#003bb3}
 .btn-green{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25);background-color:#7bb739;background-image:-moz-linear-gradient(top,#a7fa4e,#7bb739);background-image:-webkit-gradient(linear,0 0,0 100%,from(#a7fa4e),to(#7bb739));background-image:-webkit-linear-gradient(top,#a7fa4e,#7bb739);background-image:-o-linear-gradient(top,#a7fa4e,#7bb739);background-image:linear-gradient(to bottom,#a7fa4e,#7bb739);background-repeat:repeat-x;border-color:#7bb739;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25)}
