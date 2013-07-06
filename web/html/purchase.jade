@@ -16,7 +16,8 @@ html(lang="en")
     
   body
     .header.two-col
-      img.col-1(src="../img/smartfarm.png", width="300")
+      a(href="loginv2.html")
+        img.col-1(src="../img/smartfarm.png", width="300")
       .loginbox.col-2
         form(action="home.html")
           input(type="text", placeholder="Username")
@@ -25,6 +26,16 @@ html(lang="en")
           
     .content
       h2 Purchase SmartFarm
+      form
+        label Name
+        input(type="text")
+        label Address
+        input(type="text")
+        label Contact Number
+        input(type="text")
+        br
+        button.btn(type="submit") Purchase
+        
       
     .footer
       //a(href="") About

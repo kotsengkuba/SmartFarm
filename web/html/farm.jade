@@ -11,9 +11,18 @@ html(lang="en")
     //twitter bootstrap js
     script(src="../bootstrap/js/bootstrap.min.js")
     
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
+    script(src="http://code.highcharts.com/highcharts.js")
+    script(src="highchart.js")
+    
   body
     .header.two-col
-      img.col-1(src="../img/smartfarm.png", width="300")
+      div.col-1
+        img(src="../img/smartfarm.png", width="300")        
+      div.quicklinks
+          a(href="home.html") Home
+          a(href="profile.html") Profile
+          a(href="billing.html") Billing 
       div.menu.col-2
         span Mr. Farmer
         div.btn-group
@@ -39,6 +48,7 @@ html(lang="en")
         h2 Farm 1
       div.chartbox
         span Chart  Here
+        div#container
       div.stats
         .statbox
           span Temperature
@@ -61,7 +71,7 @@ html(lang="en")
     
     script(type="text/javascript")
       $(".statbox").click(function(){
-        $(".chartbox").toggle();
+        $(".chartbox").slideToggle();
       });
     
     .footer

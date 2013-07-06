@@ -15,7 +15,12 @@ html(lang="en")
     
   body
     .header.two-col
-      img.col-1(src="../img/smartfarm.png", width="300")
+      div.col-1
+        img(src="../img/smartfarm.png", width="300")        
+      div.quicklinks
+          a(href="home.html") Home
+          a(href="profile.html") Profile
+          a(href="billing.html") Billing 
       div.menu.col-2
         span Mr. Farmer
         div.btn-group
@@ -30,14 +35,13 @@ html(lang="en")
               a(href="billing.html") Billing
             li
                a(href="loginv2.html") Logout
-               
+                        
     script(type="text/javascript")
       $(document).ready(function () {
         $('.dropdown-toggle').dropdown();
-      });
-      
+      }); 
     .content
-      h2 Your Farms
+      h2 My Farms
       each farm in farms
         .farmbox.two-col
           div.col-1
@@ -45,10 +49,14 @@ html(lang="en")
               h3 #{farm.name}
             p #{farm.ad}
           div.col-2
-            img.staticon(src="../img/box-green.png", width="100")
-            img.staticon(src="../img/box-green.png", width="100")
-            img.staticon(src="../img/box-green.png", width="100")
-            img.staticon(src="../img/box-green.png", width="100")
+            .staticon
+              span 33&deg
+            .staticon
+              span 56%
+            .staticon
+              img(src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png")
+            .staticon  
+              span 88
         
       .farmbox
         a(href="newfarm.html") New Farm

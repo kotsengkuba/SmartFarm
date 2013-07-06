@@ -15,7 +15,12 @@ html(lang="en")
     
   body
     .header.two-col
-      img.col-1(src="../img/smartfarm.png", width="300")
+      div.col-1
+        img(src="../img/smartfarm.png", width="300")        
+      div.quicklinks
+          a(href="home.html") Home
+          a(href="profile.html") Profile
+          a(href="billing.html") Billing 
       div.menu.col-2
         span Mr. Farmer
         div.btn-group
@@ -38,6 +43,7 @@ html(lang="en")
       
     .content
       h2 Billing
+      p Current Billing status, next due date, billing history, payment instructions 
         
     .footer
       //a(href="") About
