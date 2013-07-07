@@ -43,7 +43,39 @@ html(lang="en")
       
     .content
       h2 Profile
-      p customer profile, farm profiles, edit and delete
+      .profile.two-col
+        .userprofile.col-1
+          img(src="../img/default-avatar.png")
+          h3 Juan the Farmer
+          span Quezon City
+          br
+          span owns 2 farms
+          br
+          .options
+            span options
+            button.btn Edit
+            button.btn.btn-danger Deactivate Account
+        
+        .farmsprofile.col-2
+          each farm in farms
+            div
+              img(src="../img/default-farm.jpg")
+              h3 #{farm.name}
+              span #{farm.ad}
+              br
+              span thisfarm@email.com
+              br
+              span ave. 200,000 chickens per year
+              br
+              .options
+                span options
+                button.btn Edit
+                button.btn.btn-danger Delete
+                
+      script(type="text/javascript")
+        $(".options").hover(function(){
+          $(this).find("button").toggle();
+        });
         
     .footer
       //a(href="") About
