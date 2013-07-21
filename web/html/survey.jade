@@ -1,0 +1,56 @@
+surveytitles = ["Temperature sensor", "Humidity sensor", "Ammonia sensor","Light sensor","Wind speed meter","Sensor density (sensor/bldg)","Internet Connection Speed","Database storage (year)","Trend analysis depth","Weather Prediction","SMS warning system","Warning systems","Management tables"]
+
+!!! 5
+html(lang="en")
+  head
+    title Smart Farm
+    //twitter bootstrap css
+    link(href="../bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
+    
+    // jquery
+    script(src="http://code.jquery.com/jquery.js")
+    //twitter bootstrap js
+    script(src="../bootstrap/js/bootstrap.min.js")
+    
+    //nivo-slider css
+    link(href="../nivo-slider/nivo-slider.css", rel="stylesheet", media="screen")
+    //nivo-slider js
+    script(src="../nivo-slider/jquery.nivo.slider.pack.js")
+    
+    // my css
+    link(href="style2point0.css", rel="stylesheet")
+    
+  body
+    .header.two-col
+      a(href="loginv2.html")
+        img.col-1(src="../img/smartfarm.png", width="300")
+      .loginbox.col-2
+        form(action="home.html")
+          input(type="text", placeholder="Username")
+          input(type="password", placeholder="Password")
+          button.btn.btn-green#login Login
+          
+    .content
+      h1 Investment Survey
+      h2 How much would you pay for:
+      each item in surveytitles
+        div
+          span #{item}
+          br
+          input(type="range", class="slider", min="0", max="100000", step="1000")
+          span Php
+          input(type="text", class="slidertext")
+          br
+          
+      .btn.btn-green Submit
+      
+      script(type="text/javascript")
+        $(".slider").change(function() {
+          $(this).siblings(".slidertext").val(this.value);
+        });
+        $(".slidertext").change(function() {
+          $(this).siblings(".slider").val(this.value);
+        });
+          
+      
+        

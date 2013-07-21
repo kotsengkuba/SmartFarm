@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Smart Farm</title>
+    <!--twitter bootstrap css-->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- jquery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!--twitter bootstrap js-->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!--nivo-slider css-->
+    <link href="../nivo-slider/nivo-slider.css" rel="stylesheet" media="screen">
+    <!--nivo-slider js-->
+    <script src="../nivo-slider/jquery.nivo.slider.pack.js"></script>
+    <!-- my css-->
+    <link href="style2point0.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header two-col"><a href="loginv2.html"><img src="../img/smartfarm.png" width="300" class="col-1"></a>
+      <div class="loginbox col-2">
+        <form action="home.html">
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <button id="login" class="btn btn-green">Login</button>
+        </form>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Investment Survey</h1>
+      <h2>How much would you pay for:</h2>
+      <div><span>Temperature sensor</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Humidity sensor</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Ammonia sensor</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Light sensor</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Wind speed meter</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Sensor density (sensor/bldg)</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Internet Connection Speed</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Database storage (year)</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Trend analysis depth</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Weather Prediction</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>SMS warning system</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Warning systems</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div><span>Management tables</span><br>
+        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
+        <input type="text" class="slidertext"><br>
+      </div>
+      <div class="btn btn-green">Submit</div>
+      <script type="text/javascript">
+        $(".slider").change(function() {
+          $(this).siblings(".slidertext").val(this.value);
+        });
+        $(".slidertext").change(function() {
+          $(this).siblings(".slider").val(this.value);
+        });
+        
+        
+      </script>
+    </div>
+  </body>
+</html>
