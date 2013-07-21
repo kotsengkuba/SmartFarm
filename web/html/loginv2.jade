@@ -24,7 +24,7 @@ html(lang="en")
     
   body
     .header.two-col
-      img.col-1(src="../img/smartfarm.png", width="300")
+      img.col-1(src="../img/smartfarm.png", class="logo")
       .loginbox.col-2
         form(action="home.html")
           input(type="text", placeholder="Username")
@@ -44,28 +44,32 @@ html(lang="en")
                     
         #caption1.nivo-html-caption
           //p We are developing Smart Farm with the goal of making chicken farm management much easier such that it can be done with without even leaving your seat. We wanted to help you keep in touch with your farm - whenever, wherever. We also want to let you know about the problems your farm is experiencing or is about to experience and let you act faster.
-          form(action="purchase.html")
-            button.btn.btn-blue.btn-large Purchase Smart Farm 
+          form(action="survey.html")
+            //button.btn.btn-blue.btn-large Purchase Smart Farm
+            button.btn.btn-blue.btn-large Take the Investment Survey
           
         #caption2.nivo-html-caption
           h3 The Watchers
           p We are a group of engineers from the University of the Philippines interested in developing better solutions for chicken farm management: increasing efficiency and productivity, making more profit, and ultimately saving chickens' lives.
           a(href="contact.html") Contact Us
-          form(action="purchase.html")
-            button.btn.btn-blue.btn-large Purchase Smart Farm
+          form(action="survey.html")
+            //button.btn.btn-blue.btn-large Purchase Smart Farm
+            button.btn.btn-blue.btn-large Take the Investment Survey
 
           
         #caption3.nivo-html-caption
           h3 Pricing
           p The project is still under development and we haven't discussed how much our services would cost. It will most likely be a one time payment for the equipment and for our services, it will be on a subscription basis, with prices based on the level of usage.
-          form(action="purchase.html")
-            button.btn.btn-blue.btn-large Purchase Smart Farm
+          form(action="survey.html")
+            //button.btn.btn-blue.btn-large Purchase Smart Farm
+            button.btn.btn-blue.btn-large Take the Investment Survey
 
       //div.lowertabs
         each tab in tabs
           div 
             a(href="")
               h4 #{tab}
+          
       
       
       script

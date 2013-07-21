@@ -23,7 +23,7 @@ html(lang="en")
   body
     .header.two-col
       a(href="loginv2.html")
-        img.col-1(src="../img/smartfarm.png", width="300")
+        img.col-1(src="../img/smartfarm.png", class="logo")
       .loginbox.col-2
         form(action="home.html")
           input(type="text", placeholder="Username")
@@ -31,17 +31,19 @@ html(lang="en")
           button.btn.btn-green#login Login
           
     .content
+    .surveyform
       h1 Investment Survey
       h2 How much would you pay for:
+    
       each item in surveytitles
         div
           span #{item}
           br
-          input(type="range", class="slider", min="0", max="100000", step="1000")
+          input(type="range", class="slider", min="0", max="50000", step="1000")
           span Php
-          input(type="text", class="slidertext")
+          input(type="text", class="slidertext", value="25000")
           br
-          
+        
       .btn.btn-green Submit
       
       script(type="text/javascript")
@@ -51,6 +53,3 @@ html(lang="en")
         $(".slidertext").change(function() {
           $(this).siblings(".slider").val(this.value);
         });
-          
-      
-        

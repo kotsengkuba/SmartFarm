@@ -16,7 +16,7 @@
     <link href="style2point0.css" rel="stylesheet">
   </head>
   <body>
-    <div class="header two-col"><a href="loginv2.html"><img src="../img/smartfarm.png" width="300" class="col-1"></a>
+    <div class="header two-col"><a href="loginv2.html"><img src="../img/smartfarm.png" class="col-1 logo"></a>
       <div class="loginbox col-2">
         <form action="home.html">
           <input type="text" placeholder="Username">
@@ -25,60 +25,61 @@
         </form>
       </div>
     </div>
-    <div class="content">
+    <div class="content"></div>
+    <div class="surveyform">
       <h1>Investment Survey</h1>
       <h2>How much would you pay for:</h2>
       <div><span>Temperature sensor</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Humidity sensor</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Ammonia sensor</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Light sensor</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Wind speed meter</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Sensor density (sensor/bldg)</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Internet Connection Speed</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Database storage (year)</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Trend analysis depth</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Weather Prediction</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>SMS warning system</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Warning systems</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div><span>Management tables</span><br>
-        <input type="range" min="0" max="100000" step="1000" class="slider"><span>Php</span>
-        <input type="text" class="slidertext"><br>
+        <input type="range" min="0" max="50000" step="1000" class="slider"><span>Php</span>
+        <input type="text" value="25000" class="slidertext"><br>
       </div>
       <div class="btn btn-green">Submit</div>
       <script type="text/javascript">
@@ -88,8 +89,6 @@
         $(".slidertext").change(function() {
           $(this).siblings(".slider").val(this.value);
         });
-        
-        
       </script>
     </div>
   </body>
