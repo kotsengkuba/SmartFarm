@@ -16,7 +16,7 @@ ul{list-style:none}
 .quicklinks{position:relative;width:100%;left:10px;top:55px;font-size:1.2em;}
 .quicklinks a{float:left;color:#bbb;margin:0 20px}
 .quicklinks a:hover{color:#fff}
-.slideshow{padding-top:10px;margin:auto;overflow:auto;position:relative;width:100%;max-width:1024px;}
+.slideshow{padding-top:10px;margin:auto;overflow:auto;position:relative;width:100%;}
 .slideshow button{position:absolute;bottom:10%;right:10%}
 .nivo-caption{background:none;color:#333;padding:8px;position:absolute;right:38px;top:40px;z-index:8;}
 .nivo-caption p,.nivo-caption h3{width:60%;margin:20px;font-size:300%;line-height:95%;letter-spacing:80%}
