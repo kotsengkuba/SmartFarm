@@ -42,6 +42,7 @@ ul{list-style:none}
 .staticon img{margin-left:10px;width:80px}
 #container{position:relative;width:90%;height:300px;margin:auto}
 .chartbox{position:relative;width:90%;display:none;margin:auto;margin-bottom:10px}
+#container{position:relative;width:100%}
 .statbox{position:relative;width:24%;min-width:150px;height:200px;background-color:#333;margin-left:10px;color:#ccc;border-radius:5px;}
 .statbox h3{position:relative;font-size:4em;margin-left:30%;margin-bottom:20%;margin-top:10%;color:#89f514}
 .statbox span{margin-left:5%}
