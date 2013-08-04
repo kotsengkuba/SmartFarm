@@ -14,14 +14,14 @@ html(lang="en")
     script(src="../bootstrap/js/bootstrap.min.js")
     
   body
-    .header.two-col
-      div.col-1
-        img.col-1(src="../img/smartfarm.png", class="logo")     
-      div.quicklinks
+    .header.row-fluid
+      div.span3
+        img(src="../img/smartfarm.png", class="logo")       
+      div.quicklinks.span3
           a(href="home.html") Home
           a(href="profile.html") Profile
           a(href="billing.html") Billing 
-      div.menu.col-2
+      div.menu.span2.offset4
         div.btn-group
           //button.btn.btn-mini.dropdown-toggle(data-toggle="dropdown")
             i.icon-chevron-down

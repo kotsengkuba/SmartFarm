@@ -1,4 +1,4 @@
-farms = [{name:"Farm1", ad:"UP"}, {name:"farm2", ad:"bagiuo"}]
+farms = [{name:"House1", ad:"Farm 1"}, {name:"House2", ad:"Farm1"}]
 
 !!! 5
 html(lang="en")
@@ -14,14 +14,14 @@ html(lang="en")
     script(src="../bootstrap/js/bootstrap.min.js")
     
   body
-    .header.two-col
-      div.col-1
-        img.col-1(src="../img/smartfarm.png", class="logo")       
-      div.quicklinks
+    .header.row-fluid
+      div.span3
+        img(src="../img/smartfarm.png", class="logo")       
+      div.quicklinks.span3
           a(href="home.html") Home
           a(href="profile.html") Profile
           a(href="billing.html") Billing 
-      div.menu.col-2
+      div.menu.span2.offset4
         div.btn-group
           //button.btn.btn-mini.dropdown-toggle(data-toggle="dropdown")
             i.icon-chevron-down
@@ -40,25 +40,76 @@ html(lang="en")
       $(document).ready(function () {
         $('.dropdown-toggle').dropdown();
       }); 
+
     .content
-      h2 My Farms
-      each farm in farms
-        .farmbox.two-col
-          div.col-1
-            a(href="farm.html")
-              h3 #{farm.name}
-            p #{farm.ad}
-          div.col-2
-            .staticon
-              span 33&deg
-            .staticon
-              span 56%
-            .staticon
-              img(src="../img/SlightDrizzle.png")
-            .staticon  
-              span 88
-      form(action="newfarm.html")
-        button.btn New Farm
+      .row-fluid
+        .span5
+          div.profile-small
+            img(src="../img/default-avatar.png")
+            h2 Juan the Farmer
+            span The Filiipno Chicken Farm
+            br
+            a Edit Profile
+
+          div
+            .notif-box.row
+              .span2
+                img.notif-icon(src="../img/SlightDrizzle.png")
+              .span10
+                h4 Weather Advisory - Low Pressure Area 
+                span.timestamp August 4, 2013 4:10pm
+                br
+                span Issued at: 11:00 AM, 04 August 2013 At 8 a.m. today, the Low Pressure Area (LPA) was in the vicintiy of Mactan, Cebu (10.0°N, 123.9°E)... 
+                a.link-blue more from http://www.pagasa.dost.gov.ph/
+            .notif-box.row
+              .span2
+                img.notif-icon(src="http://findicons.com/files/icons/1014/ivista/128/good_or_tick.png")
+              .span10
+                h4 SmartFarm Warning System
+                span.timestamp August 4, 2013 4:10pm
+                br
+                span House x at Farm y: Temperature is back to comfortrable range. Good work!
+            .notif-box.row
+              .span2
+                img.notif-icon(src="http://png.findicons.com/files/icons/998/airicons/128/error.png")
+              .span10
+                h4 SmartFarm Warning System
+                span.timestamp August 4, 2013 4:10pm
+                br
+                span House x at Farm y: Temperature is above the comfortable level. Check your climate control equipment.
+            a.link-blue See All Notifications
+        .span7
+          h2 My Farms
+          //
+            .row
+              div.span8.offset4
+                .row
+                  .span3
+                    span Temperature
+                  .span3
+                    span Rel. Humidity
+                  .span3
+                    span Ammonia
+                  .span3
+                    span Weather
+          each farm in farms
+            .farmbox.row
+              div.span4
+                a(href="farm.html")
+                  h3 #{farm.name}
+                p #{farm.ad}
+                //img(src="http://findicons.com/files/icons/2226/matte_basic/32/refresh1.png")
+              div.span8
+                .staticon
+                  span.value 27.1
+                  span.units &deg C
+                .staticon
+                  span.value 75.1%
+                .staticon  
+                  span.value 14.2
+                  span.units ppm
+                .staticon
+                  img(src="../img/SlightDrizzle.png")
         
         
     .footer

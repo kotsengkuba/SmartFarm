@@ -15,14 +15,14 @@ html(lang="en")
     script(src="../bootstrap/js/bootstrap.min.js")
     
   body
-    .header.two-col
-      a(href="loginv2.html")
-        img.col-1(src="../img/smartfarm.png", class="logo")
-      .loginbox.col-2
+    .header.row-fluid
+      div.span3
+        img(src="../img/smartfarm.png", class="logo") 
+      .loginbox.span6.offset3
         form(action="home.html")
           input(type="text", placeholder="Username")
           input(type="password", placeholder="Password")
-          button.btn.btn-green#login Login
+          button.btn.btn-green#login Login  
           
     .content
       h2 Purchase SmartFarm

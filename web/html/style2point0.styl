@@ -1,5 +1,8 @@
+// variables
+$bgcolor = #EEEEEE
+
 body
-  background-color #EEEEEE
+  background-color $bgcolor
   
 input[type="text"],
 input[type="password"]
@@ -12,6 +15,9 @@ a
 a:hover 
   text-decoration:none
   cursor:pointer
+
+.link-blue
+  color #2222AA
   
 ul
   list-style none
@@ -33,6 +39,7 @@ ul
   
 .content
   //background-color #222222
+  clear both
   padding 0 20px
   
 .loginbox
@@ -139,13 +146,6 @@ ul
     h4
       text-align center
     
-.two-col
-  //overflow auto
-  .col-1
-    float left
-  .col-2
-    float right
-    
 .stats
   width 90%
   position relative
@@ -159,7 +159,7 @@ ul
   clear both
   margin auto
   margin-top 10px
-  width 90%
+  //width 90%
   padding 10px
   
 .farmbox:hover
@@ -177,10 +177,15 @@ ul
   span
     clear both
     position relative
-    margin-left 10px
-    font-size 2.8em
+    overflow auto
+    margin-left 5px
     top 20px
-    color #CCCCCC
+  span.value
+    font-size 1.75em
+    color #89F514
+  span.units
+    font-size 1.5em
+    color #89F514
   img
     margin-left 10px
     width 80px
@@ -261,6 +266,28 @@ ul
       cursor pointer
     button
       display none
+
+.profile-small
+  overflow auto
+  img
+    width 100px
+    float left
+    margin 10px
+
+.notif-box
+  clear both
+  overflow auto
+  margin 5px
+  padding-bottom 10px
+  border-bottom solid 1px
+  border-color #DDDDDD
+  .notif-icon
+    width 75px
+    float left
+  h4
+    margin-bottom 0
+  .timestamp
+    color #BBBBBB
 
 .btn-blue
 	color: #FFFFFF

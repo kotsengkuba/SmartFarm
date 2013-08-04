@@ -12,10 +12,10 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="header two-col">
-      <div class="col-1"><img src="../img/smartfarm.png" class="col-1 logo"></div>
-      <div class="quicklinks"><a href="home.html">Home</a><a href="profile.html">Profile</a><a href="billing.html">Billing </a></div>
-      <div class="menu col-2">
+    <div class="header row-fluid">
+      <div class="span3"><img src="../img/smartfarm.png" class="logo"></div>
+      <div class="quicklinks span3"><a href="home.html">Home</a><a href="profile.html">Profile</a><a href="billing.html">Billing </a></div>
+      <div class="menu span2 offset4">
         <div class="btn-group"><!--button.btn.btn-mini.dropdown-toggle(data-toggle="dropdown")<i class="icon-chevron-down"></i>-->
           <h3 data-toggle="dropdown" class="dropdown-toggle">Mr. Farmer</h3>
           <ul class="dropdown-menu">
@@ -31,36 +31,75 @@
       $(document).ready(function () {
         $('.dropdown-toggle').dropdown();
       }); 
+      
     </script>
     <div class="content">
-      <h2>My Farms</h2>
-      <div class="farmbox two-col">
-        <div class="col-1"><a href="farm.html">
-            <h3>Farm1</h3></a>
-          <p>UP</p>
+      <div class="row-fluid">
+        <div class="span5">
+          <div class="profile-small"><img src="../img/default-avatar.png">
+            <h2>Juan the Farmer</h2><span>The Filiipno Chicken Farm</span><br><a>Edit Profile</a>
+          </div>
+          <div>
+            <div class="notif-box row">
+              <div class="span2"><img src="../img/SlightDrizzle.png" class="notif-icon"></div>
+              <div class="span10">
+                <h4>Weather Advisory - Low Pressure Area </h4><span class="timestamp">August 4, 2013 4:10pm</span><br><span>Issued at: 11:00 AM, 04 August 2013 At 8 a.m. today, the Low Pressure Area (LPA) was in the vicintiy of Mactan, Cebu (10.0°N, 123.9°E)... </span><a class="link-blue">more from http://www.pagasa.dost.gov.ph/</a>
+              </div>
+            </div>
+            <div class="notif-box row">
+              <div class="span2"><img src="http://findicons.com/files/icons/1014/ivista/128/good_or_tick.png" class="notif-icon"></div>
+              <div class="span10">
+                <h4>SmartFarm Warning System</h4><span class="timestamp">August 4, 2013 4:10pm</span><br><span>House x at Farm y: Temperature is back to comfortrable range. Good work!</span>
+              </div>
+            </div>
+            <div class="notif-box row">
+              <div class="span2"><img src="http://png.findicons.com/files/icons/998/airicons/128/error.png" class="notif-icon"></div>
+              <div class="span10">
+                <h4>SmartFarm Warning System</h4><span class="timestamp">August 4, 2013 4:10pm</span><br><span>House x at Farm y: Temperature is above the comfortable level. Check your climate control equipment.</span>
+              </div>
+            </div><a class="link-blue">See All Notifications</a>
+          </div>
         </div>
-        <div class="col-2">
-          <div class="staticon"><span>33&deg</span></div>
-          <div class="staticon"><span>56%</span></div>
-          <div class="staticon"><img src="../img/SlightDrizzle.png"></div>
-          <div class="staticon"> <span>88</span></div>
+        <div class="span7">
+          <h2>My Farms</h2><!--
+          <div class="row">
+            <div class="span8 offset4">
+              <div class="row">
+                <div class="span3"><span>Temperature</span></div>
+                <div class="span3"><span>Rel. Humidity</span></div>
+                <div class="span3"><span>Ammonia</span></div>
+                <div class="span3"><span>Weather</span></div>
+              </div>
+            </div>
+          </div>-->
+          <div class="farmbox row">
+            <div class="span4"><a href="farm.html">
+                <h3>House1</h3></a>
+              <p>Farm 1</p>
+              <!--img(src="http://findicons.com/files/icons/2226/matte_basic/32/refresh1.png")-->
+            </div>
+            <div class="span8">
+              <div class="staticon"><span class="value">27.1</span><span class="units">&deg C</span></div>
+              <div class="staticon"><span class="value">75.1%</span></div>
+              <div class="staticon"> <span class="value">14.2</span><span class="units">ppm</span></div>
+              <div class="staticon"><img src="../img/SlightDrizzle.png"></div>
+            </div>
+          </div>
+          <div class="farmbox row">
+            <div class="span4"><a href="farm.html">
+                <h3>House2</h3></a>
+              <p>Farm1</p>
+              <!--img(src="http://findicons.com/files/icons/2226/matte_basic/32/refresh1.png")-->
+            </div>
+            <div class="span8">
+              <div class="staticon"><span class="value">27.1</span><span class="units">&deg C</span></div>
+              <div class="staticon"><span class="value">75.1%</span></div>
+              <div class="staticon"> <span class="value">14.2</span><span class="units">ppm</span></div>
+              <div class="staticon"><img src="../img/SlightDrizzle.png"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="farmbox two-col">
-        <div class="col-1"><a href="farm.html">
-            <h3>farm2</h3></a>
-          <p>bagiuo</p>
-        </div>
-        <div class="col-2">
-          <div class="staticon"><span>33&deg</span></div>
-          <div class="staticon"><span>56%</span></div>
-          <div class="staticon"><img src="../img/SlightDrizzle.png"></div>
-          <div class="staticon"> <span>88</span></div>
-        </div>
-      </div>
-      <form action="newfarm.html">
-        <button class="btn">New Farm</button>
-      </form>
     </div>
     <div class="footer">
       <!--a(href="") About-->

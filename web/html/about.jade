@@ -8,21 +8,14 @@ html(lang="en")
     script(src="../bootstrap/js/bootstrap.min.js")
     
   body
-    div.header
-      a(href="")
-        img(src="../img/smartfarm.png", width="300")
-      div.logoutbar.righted
-        span Mr. Farmer
-        div.btn-group
-          button.btn.btn-mini.dropdown-toggle(data-toggle="dropdown")
-            i.icon-chevron-down
-          ul.dropdown-menu
-            li
-              a(href="home.html") My Farms
-            li
-              a(href="") Profile
-            li
-               a(href="login.html") Logout
+    .header.row-fluid
+      div.span3
+        img(src="../img/smartfarm.png", class="logo") 
+      .loginbox.span6.offset3
+        form(action="home.html")
+          input(type="text", placeholder="Username")
+          input(type="password", placeholder="Password")
+          button.btn.btn-green#login Login  
                
     script(type="text/javascript")
       $(document).ready(function () {
