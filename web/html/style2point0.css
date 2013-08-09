@@ -53,10 +53,10 @@ ul{list-style:none}
 .profile img{width:150px;float:left;margin:10px}
 .profile .userprofile{position:relative;width:50%}
 .profile .farmsprofile{margin-bottom:25px;position:relative;width:50%}
-.profile .options{position:relative;margin-top:10px;height:50px;}
-.profile .options span{color:#00f}
-.profile .options span:hover{cursor:pointer}
-.profile .options button{display:none}
+.options{position:relative;margin-top:10px;height:50px;}
+.options span{color:#00f}
+.options span:hover{cursor:pointer}
+.options button{display:none}
 .profile-small{overflow:auto;}
 .profile-small img{width:100px;float:left;margin:10px}
 .notif-box{clear:both;overflow:auto;margin:5px;padding-bottom:10px;border-bottom:solid 1px;border-color:#ddd;}
